@@ -1,12 +1,18 @@
 package com.ruszkowski89.RESTfulJerseyMessenger.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
+@XmlRootElement
 public class Message {
   private long id;
   private String author;
   private Date date;
   private String message;
+
+  public Message(){
+
+  }
 
   public Message(long id, String author, String message) {
     this.id = id;
